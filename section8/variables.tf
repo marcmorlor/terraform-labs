@@ -38,7 +38,7 @@ variable "variables_sub_cidr" {
 variable "variables_sub_az" {
   description = "Availability Zone used Variables Subnet"
   type        = string
-  default     = "us-west-2a"
+  default     = "us-east-1a"
 }
 
 variable "variables_sub_auto_ip" {
