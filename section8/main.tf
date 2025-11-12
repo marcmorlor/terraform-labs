@@ -1,6 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
 
 #Retrieve the list of AZs in the current AWS region
@@ -313,10 +313,4 @@ resource "aws_instance" "web_server2" {
     ignore_changes = [security_groups]
   }
 
-}
-
-resource "aws_instance" "terraform_import" {
-  instance_type                        = "t2.micro"
-  ami                                  = "ami-0cae6d6fe6048ca2c"
-  
 }
